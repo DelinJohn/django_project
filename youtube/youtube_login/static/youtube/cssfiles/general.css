@@ -1,0 +1,27 @@
+body
+{
+  margin: 0;
+  padding-top:75px ;
+  padding-right: 20px;
+  padding-left: 75px;
+  
+}
+p
+{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+button,
+img
+{
+  font-family: Arial, Helvetica, sans-serif;
+  transition: .3ms;
+}
+@media (max-width: 768px) {
+  body {
+    padding-left:5px;
+    padding-right:8px;
+    
+  }
+}

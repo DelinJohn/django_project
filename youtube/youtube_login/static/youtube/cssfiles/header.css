@@ -1,0 +1,336 @@
+.header {
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  background-color: white;
+  border-bottom-color: rgb(204, 204, 204);
+  padding-bottom: 20px;
+  padding-top: 10px;
+  align-items: center;
+}
+
+.left {
+  flex: 1;
+  justify-content: start;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.harmburger {
+  height: 24px;
+  margin-left: 20px;
+}
+
+.youtubeicon {
+  height:20px;
+  margin-left: 10px;
+}
+
+.middle {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchbar {
+  height: 40px;
+  flex: 1;
+  margin: 0;
+  display: flex;
+  flex: 1;
+  border-style: solid;
+  border-color: rgb(204, 204, 204);
+  border-width: 1px;
+  padding-left: 10px;
+  font-size: 17px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.searchbar::placeholder {
+  font-size: 17px;
+  color: rgb(149, 141, 141);
+}
+
+.searchbutton {
+  height: 40px;
+  width: 60px;
+  margin-left: -1px;
+  border-style: solid;
+  border-color: rgb(204, 204, 204);
+  border-width: 1px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+}
+
+.searchicon {
+  height: 25px;
+}
+
+.voicebutton {
+  height: 35px;
+  width: 35px;
+  margin: 0;
+  border: 0;
+  border-radius: 35px;
+  margin-left: 5px;
+
+}
+
+.right {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+
+  justify-content: end;
+
+}
+
+.loginpic {
+  height: 30px;
+ 
+
+}
+
+
+.uploadicon {
+
+  height: 25px;
+ 
+
+}
+
+.bellicon {
+  height: 25px;
+  
+}
+
+
+
+.choice {
+  padding: 0;
+  position: sticky;
+  top: 50px;
+  z-index: 3;
+  margin-bottom: 40px;
+  margin-top: -45px;
+}
+
+.choiceSubdiv {
+
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  background-color: white;
+  padding-top: 10px;
+  margin-left: -4px;
+  z-index: 1;
+
+}
+
+#choice-button-explorer,
+.choice-buttons-all,
+.choice-buttons {
+  margin-left: 10px;
+  padding: 10px;
+  text-wrap: nowrap;
+  border: 0;
+  margin-bottom: 10px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+#choice-button-explorer
+{
+font-size:20px;
+
+}
+
+.choice-buttons-all {
+  background-color: black;
+  color: white;
+}
+
+.choice-buttons-all:active {
+  background-color: white;
+  color: black;
+}
+
+.choice-buttons:hover {
+  cursor: pointer;
+  border: 0;
+}
+#choice-button-explorer:active,
+.choice-buttons:active {
+  color: white;
+  background-color: black;
+
+}
+
+.choiceSubdiv::-webkit-scrollbar {
+  display: none;
+}
+
+.choice {
+
+  position: sicky;
+
+}
+
+.left-choice {
+  position: absolute;
+  left: -10px;
+  top: 20px;
+  opacity: 0;
+  transform: translateY(-50%);
+  border: 0;
+}
+
+.right-choice {
+  position: absolute;
+  right: -10px;
+  top: 20px;
+  transform: translateY(-50%);
+  border: 0;
+  opacity: 0;
+}
+
+.right-choice:hover,
+.left-choice:hover {
+  opacity: 0.5;
+}
+
+.hello {
+  background-color: white;
+  margin: 3px;
+  border: 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: start;
+  width: 190px;
+  padding: 6px;
+  font-size: small;
+}
+
+.hello:hover {
+  background-color: rgb(222, 222, 222);
+}
+
+.hello img {
+  padding-right: 30px;
+  height: 25px;
+
+}
+
+.offcanvas-body div {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgb(185, 185, 185);
+
+}
+#navbar2 {
+  display: none;
+ 
+}
+
+#toggleNavbar1
+{
+  border: 0;
+  display: flex;
+  color: black;
+  padding:5px;
+  border-radius: 20px;
+}
+#toggleNavbar1:hover{
+  background-color: rgb(197, 197, 197);
+}
+#toggleNavbar2
+{
+  border: 0;
+  background-color: white;
+}
+
+@media (min-width: 768px) {
+  #profilePicBtn,
+  #toggleNavbar1 {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #searchform {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #rightelements {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #sidebarcollapse {
+    display:none;
+  }
+}
+
+
+
+#offcanvasWithBothOptions {
+  width: 240px;
+}
+#uploadIconId,
+#notificationId,
+#profilePicButton
+{
+  border: 0;
+  background-color: white;
+  padding:10px;
+  position: relative;
+  z-index: 5;
+  
+}
+#uploadIconId:active,
+#notificationId:active,
+#profilePicButton:active
+{
+height: 20px;
+}
+#profilePicDiscription,
+#bellIconDiscritiption,
+#upIcnDiscription
+{
+ width: 200px;
+ position: absolute;
+ height: 100vh;
+ top: 20px;
+ z-index:7 ;
+}
+@media (max-width: 768px) {
+  #header-offcanvas{
+    display:none;
+  }
+}
+@media (min-width: 768px) {
+  #choice-button-explorer{
+    display:none;
+  }
+}
+#offcanvasRight
+{
+  width: 100%;
+}
